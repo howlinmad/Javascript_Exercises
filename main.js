@@ -21,6 +21,7 @@ for(var i = 0; i < hashtag.length + 1; i++) {
   output.innerHTML += line + "<br />";
 */
 
+<<<<<<< HEAD
 /* 2. Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions.
 For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
 When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5
@@ -51,3 +52,6 @@ for (var n = 1; n <= 100; n++) {
   fizzbuzz.innerHTML += (output || n) + ", ";
 }
 */
+=======
+
+>>>>>>> 21fbe9323d2047c29d2bfd0aa640659fe79338b2
