@@ -52,3 +52,47 @@ for (var n = 1; n <= 100; n++) {
   fizzbuzz.innerHTML += (output || n) + ", ";
 }
 */
+
+
+/* 3. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
+    At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
+*/
+//My solution
+var chesstag = "";
+function isEven(n) {
+   return n % 2 == 0;
+}
+function isOdd(n) {
+   return Math.abs(n % 2) == 1;
+}
+for(var i=1; i < 64; i++) {
+ 	if(i % 9 === 0){
+      chesstag += "<br />";
+    } else if(isEven(i)) {
+      chesstag += "#";
+    } else if(isOdd(i)){
+      chesstag += "&nbsp";
+    }
+}
+document.getElementById("chessboard").innerHTML += chesstag;
+//"Eloquent" solution:
+/* 
+var size = 8;
+
+var board = "";
+
+for (var y = 0; y < size; y++) {
+  for (var x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0)
+      board += "&nbsp";
+    else
+      board += "#";
+  }
+  board += "<br />";
+}
+
+document.getElementById("chessboard").innerHTML += board;
+*/
+
+
+    
