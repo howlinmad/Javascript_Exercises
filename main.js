@@ -93,6 +93,17 @@ for (var y = 0; y < size; y++) {
 
 document.getElementById("chessboard").innerHTML += board;
 */
-
-
+/* 4. Write a function min that takes two arguments and returns their minimum. */
+function min(x, y) {
+	if(x < y) return x;
+  else return y;
+}
+var minOutput = document.getElementById("minOutput1");
+minOutput.innerHTML += min(0, 10);
+// → 0
+minOutput = document.getElementById("minOutput2");
+minOutput.innerHTML += min(0,-10);
+// → -10
+//"Eloquent" solution:
+//Nailed it! Same as mine!
     
