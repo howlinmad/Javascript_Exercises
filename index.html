@@ -58,6 +58,41 @@
             </p>
         </div>
     
+        <div>
+            <p>5. We’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 to check whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:</p>
+            <p>Zero is even.<br />
+                One is odd.<br />
+                For any other number N, its evenness is the same as N - 2.<br />
+                Define a recursive function isEven corresponding to this description. The function should accept a number parameter and return a Boolean.</p>
+            <p>MySolution: <br />
+                <blockquote>
+                function isEven(number) {<br />
+               if (number < 0){<br />
+                 number = Math.abs(number);<br />
+               }<br />
+               if (number === 0)<br />
+                return true;<br />
+               else if (number === 1)<br />
+                return false;<br />
+               else {<br />
+                number -= 2;<br />    
+                return isEven(number);<br />
+                }}
+                </blockquote></p>
+            <p id="recursive1">Output:<br />
+            isEven(50);<br />
+                //
+            </p>
+            <p id="recursive2">
+            isEven(75);<br />
+                //
+            </p>
+            <p id="recursive3">
+            isEven(-1);<br />
+                //
+            </p>
+        </div>
+    
     
         <script type="text/javascript" src="main.js"></script>
     </body>
