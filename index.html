@@ -93,6 +93,36 @@
             </p>
         </div>
     
+        <div>
+            <p>6. Write a function countBs that takes a string as its only argument and returns a number that indicates how many uppercase “B” characters are in the string.<br />
+                Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted 
+                (rather than counting only uppercase “B” characters).</p>
+            <p>My Solution: 
+            <blockquote>function countBs(BBC) {<br />
+            var bString = [];<br />
+            for(var i = 0; i < BBC.length; i++) {<br />
+                if(BBC.charAt(i) === "B")<br />
+                  bString.push(BBC.charAt(i));<br />    
+            }<br />
+            return bString.length;<br />
+            }<br />
+            function countChar(word, letter) {<br />
+                var numOfLetters = [];<br />
+                for(var i = 0; i < word.length; i++){<br />
+                    if(word.charAt(i) === letter)<br />
+                      numOfLetters.push(word.charAt(i));<br />
+                }<br />
+              return numOfLetters.length;<br />
+            }<br /></blockquote></p>
+            <p id="beanCount1">Output:<br />
+            countBs("BBC");<br />
+            //
+            </p>
+            <p id="beanCount2">Output:<br />
+            countChar("kakkerlak", "k");<br />
+            //
+            </p>
+        </div>
     
         <script type="text/javascript" src="main.js"></script>
     </body>

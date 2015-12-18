@@ -146,4 +146,40 @@ function isEven(n) {
 }
 */
 
-    
+/* 6. Write a function countBs that takes a string as its only argument and returns a number that indicates how many uppercase “B” characters are in the string.
+Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters).
+*/
+function countBs(BBC) {
+	var bString = [];
+	for(var i = 0; i < BBC.length; i++) {
+    	if(BBC.charAt(i) === "B")
+          bString.push(BBC.charAt(i));      
+    }
+	return bString.length;
+}
+function countChar(word, letter) {
+ 	var numOfLetters = [];
+  	for(var i = 0; i < word.length; i++){
+     	if(word.charAt(i) === letter)
+          numOfLetters.push(word.charAt(i));
+    }
+  return numOfLetters.length;
+}
+var beanCount1 = document.getElementById("beanCount1");
+var beanCount2 = document.getElementById("beanCount2");
+beanCount1.innerHTML += countBs("BBC");
+beanCount2.innerHTML += countChar("kakkerlak", "k");
+//"Eloquent Solution"
+/*
+function countChar(string, ch) {
+  var counted = 0;
+  for (var i = 0; i < string.length; i++)
+    if (string.charAt(i) == ch)
+      counted += 1;
+  return counted;
+}
+
+function countBs(string) {
+  return countChar(string, "B");
+}
+*/
